@@ -1,0 +1,6 @@
+1. construct_inter_data_from_review.py-->cloth_inter_non_overlap.csv
+2. split_user_groups.py: split users into zero-shor, few-shot, and warm-shot groups, and filter zero-shot user-item interactions --> cloth_inter_non_overlap_filter.csv
+3. construct_multi_modal_data.py: select item multi-modal features according to the user-item interactions -->beauty_multi_modal_data_filter.csv
+4. text_feature_preprocess.py, visual_feature_pretrain.py : transform multi-modal features to embeddings --> beauty_text_features_filter.npy
+
+#in the datasets, files ending with filter means that we filter the records for zero-shot users, just for the health_cloth_beauty
